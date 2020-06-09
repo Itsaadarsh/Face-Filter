@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Animal Gallery</title>
+  <style media="screen">
+    body {
+      margin: 0;
+      padding-top: 4rem;
+      box-sizing: border-box;
+      overflow: inherit;
+    }
+
+    .container {
+      max-width: 90%;
+      border: 5px solid;
+      background: #aacfcf;
+    }
+
+    .header h1 {
+      text-align: center;
+      padding: 2rem 0 5rem 0;
+      font-family: cursive;
+      font-weight: bold;
+      color: #204051;
+      font-size: 4rem;
+    }
+
+    .flex-btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .flex-btn button:hover {
+      background: #aacfcf;
+    }
+
+    #gen {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: space-around;
+    }
+
+
+    #gen img {
+      position: relative;
+      animation-name: imageAni;
+      animation-duration: 2s;
+      margin: 1rem;
+      box-shadow: 20px 0px 15px;
+      width: 30%;
+    }
+
+    @keyframes imageAni {
+      0% {
+        left: 0px;
+        top: 100px;
+      }
+
+      15% {
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>ANIMAL GALLERY</h1>
+      <div class="flex-btn">
+        <button type="button" class="btn btn-success btn-lg" onclick="cats()"><b style="color:black">🐈 CAT 🐈</b></button>
+        <button type="button" class="btn btn-danger btn-lg" onclick="dogs()"><b style="color:black">🐕 DOG 🐕</b></button>
+        <button type="button" class="btn btn-warning btn-lg" onclick="tiger()"><b style="color:black">🐯 TIGER 🐯</b></button>
+        <button type="button" class="btn btn-info btn-lg " onclick="elephant()"><b style="color:black">🐘 ELEPHANT 🐘</b></button>
+        <button type="button" class="btn btn-dark btn-lg" onclick="clearing()"><b style="color:white">🧽 CLEAR 🧽</b></button>
+      </div>
+      <div id="gen"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

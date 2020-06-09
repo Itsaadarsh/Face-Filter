@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Age Expander</title>
+  <style media="screen">
+    .container {
+      background: #32e0c4;
+      border: 8px black solid;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 4rem;
+      box-sizing: border-box;
+    }
+
+    .header h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 2rem;
+      text-decoration: underline overline;
+      text-align: center;
+      text-underline-position: alphabetic;
+      border-bottom: 2px black solid;
+      border-width: medium;
+    }
+
+    .header {
+      border-bottom: 2px black solid;
+      border-width: medium;
+      text-align: center;
+    }
+
+    .input-btn {
+      display: flex;
+      padding: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .flex-btn {
+      display: flex;
+      padding: 3rem 10rem;
+      border-bottom: 2px black solid;
+      border-width: medium;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Age Expander</h1>
+      <div class="input-btn">
+        <button type="button" class="btn btn-info btn-lg " onclick="inputAge()"><b>ENTER YOUR AGE</b></button>
+        <button type="button" class="btn btn-dark btn-lg" onclick="clearing()"><b>CLEAR</b></button>
+      </div>
+    </div>
+    <div class="flex-btn">
+      <button type="button" class="btn btn-primary btn-lg disbtn1" onclick="months()"><b>MONTHS</b></button>
+      <button type="button" class="btn btn-secondary btn-lg disbtn2" onclick="weeks()"><b>WEEKS</b></button>
+      <button type="button" class="btn btn-success btn-lg disbtn3" onclick="days()"><b>DAYS</b></button>
+      <button type="button" class="btn btn-danger btn-lg disbtn4" onclick="minutes()"><b>MINUTES</b></button>
+      <button type="button" class="btn btn-warning btn- disbtn5" onclick="seconds()"><b style="color:white">SECONDS</b></button>
+    </div>
+    <div id="result">
+    </div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
